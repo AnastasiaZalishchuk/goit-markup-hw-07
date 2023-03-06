@@ -26,6 +26,20 @@
             >Web<span class="logo-studio">studio</span></a
           >
           <div class="container-nav-header js-menu-container">
+            <button
+              class="header-close-btn modal-btn js-close-menu"
+              type="button"
+            >
+              <svg
+                class="modal-icon"
+                width="8px"
+                height="8px"
+                viewBox="0 0 8 8"
+              >
+                <use href="./img/icon/symbol-defs.svg"></use>
+                <use href="./img/icon/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
             <ul class="header-list list header-container">
               <li class="header-item">
                 <a class="header-item-link link current" href="./index.html"
@@ -207,6 +221,10 @@
               <img
                 class="service-item-photo"
                 src="./img/servises/servises-1.jpg"
+                srcset="
+                  ./img/servises/servises-1_desk@1x.jpg,
+                  ./img/services/servises-1_desk@2x.jpq
+                "
                 alt="computer screen"
                 width="360"
                 height="300"
@@ -215,6 +233,10 @@
             <li class="services-item">
               <img
                 class="service-item-photo"
+                srcset="
+                  ./img/servises/servises-2_desk@1x.jpg,
+                  ./img/services/servises-2_desk@2x.jpq
+                "
                 src="./img/servises/servises-2.jpg"
                 alt="screen telephone"
                 width="360"
@@ -224,6 +246,10 @@
             <li class="services-item">
               <img
                 class="service-item-photo"
+                srcset="
+                  ./img/servises/servises-3_desk@1x.jpg,
+                  ./img/services/servises-3_desk@2x.jpq
+                "
                 src="./img/servises/servises-3.jpg"
                 alt="telephone with laptop"
                 width="360"
@@ -244,8 +270,11 @@
               <div class="container-wrapper">
                 <img
                   class="team-photo"
-                  srcset="./img/team-members/team-member-1.jpg 1x, ./ 2x"
-                  src="./img/team-members/team-member-1.jpg"
+                  srcset="
+                    ./img/team-members/team-members-1@1x.jpg,
+                    ./img/team-members-1@2x
+                  "
+                  src="./img/team-members/team-members-1.jpg"
                   alt="smiling man"
                   width="264"
                   height="260"
@@ -318,8 +347,13 @@
               <div class="container-wrapper">
                 <img
                   class="team-photo"
+                  srcset="
+                    ./img/team-members/team-members-2@1x.jpg,
+                    ./img/team-members/team-members-2@2x.jpg
+                  "
                   src="./img/team-members/team-member-2.jpg"
-                  alt="smaling man looking away"
+                  alt="smaling man
+                looking away"
                   width="264"
                   height="260"
                 />
@@ -391,6 +425,10 @@
               <div class="container-wrapper">
                 <img
                   class="team-photo"
+                  srcset="
+                    ./img/team-members/team-members-3@1x.jpg,
+                    ./img/team-members/team-members-3@2x.jpg
+                  "
                   src="./img/team-members/team-member-3.jpg"
                   alt="smiling girl in pink sweater"
                   width="264"
@@ -465,6 +503,10 @@
                 <img
                   class="team-photo"
                   src="./img/team-members/team-member-4.jpg"
+                  srcset="
+                    ./img/team-members/team-members-4@1x.jpg,
+                    ./img/team-members/team-members-4@2x.jpg
+                  "
                   alt="smiling beardet man"
                   width="264"
                   height="260"
@@ -719,7 +761,7 @@
 
     <!-- Modal window -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8px" height="8px" viewBox="0 0 8 8">
@@ -799,7 +841,7 @@
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- script-js -->
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
